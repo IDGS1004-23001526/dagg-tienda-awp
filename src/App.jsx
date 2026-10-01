@@ -84,7 +84,7 @@ function App() {
     return (
       <div className="container text-center py-5">
         <h2 className="text-primary mt-5"></h2>
-        <p className="text-muted">1...2...3</p>
+        <h3 className="text-muted">1...2...3</h3>
       </div>
     );
   }
@@ -105,6 +105,7 @@ async function GetCarnes(){
   let response = await fetch(`https://jsonplaceholder.typicode.com/todos/`);
 
   let data = await response.json();
+  return data;
 } 
 
 export default App
